@@ -1,0 +1,74 @@
+
+<style>
+    .container{
+        display:grid;
+    
+        grid-template-rows: 2fr 20fr 2fr;
+        padding: 10px;
+        background-color: aqua;
+        margin: 5px;
+
+    }
+    .header{
+background-color:green;
+ margin: 5px;
+ text-align: center;
+    }
+    .middle{
+        display: grid;
+        grid-template-columns: 6fr 10fr;
+         margin: 5px;
+        
+      
+
+    }
+    .aside{
+        background-color: greenyellow;
+         margin: 5px;
+    }
+    .article{
+        background-color: orange;
+         margin: 5px;
+       
+    }
+    .image{
+        background-color: orangered;
+         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 130px;
+        padding: 3px;
+        gap:3px;
+    }
+
+    .footer{
+background-color:green;
+ margin: 5px;
+ text-align: center;
+    }
+
+</style>
+
+<div class="container">
+    <div class="header">
+        header
+    </div>
+
+    <div class="middle">
+        <div class="aside">
+            aside
+        </div>
+
+        <div class="Article">
+           Article
+           <div class="Image">
+           <h1>image</h1>
+           <h1>image</h1>
+           <h1>image</h1>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        footer
+    </div>
+</div>
