@@ -21,7 +21,7 @@
         <h1 class="text-xl">Greenden</h1>
         
 
-<i class="fa-solid fa-bars md:hidden"></i>
+<i id="menuicon"  class="fa-solid fa-bars md:hidden"></i>
 
 
         <div class="flex gap-6 text-gray-500 hidden md:flex"  > 
@@ -31,13 +31,62 @@
         </div>
     </nav>
 
+
+    <!--sidenavbar-->
+    <div id="sidenav" class="bg-green-200 fixed top-0 z-20 flex justify-center" style="width: 50%; right:-50%; height: 100vh;">
+            <div class="flex flex-col gap-6 text-gray-500 "  > 
+            <a href=" index.html" class="hover:underline hover:text-black">Home</a>
+             <a href="products.html" class="hover:underline hover:text-black">Products</a>
+              <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
+            </div>
+
+            <div id="close"> 
+            <p class=" absolute top-0 right-0 cursor-pointer p-5 text-right text-2xl">x</p>
+            </div>
+    </div>
+
 <!--products-->
-<div class="text-center mt-5">
+
+    <div class="text-center mt-5">
 
     <h1 class="font-bold text-2xl mb-3">Our products</h1>
-    <input type="text" placeholder="Search for a product..." class="border border-black" style="width:70%">
-</div> 
-<div class="container grid grid-cols-2 p-4 md:grid-cols-4">
+    <input type="text" placeholder="Search for a product..." id="search" class="border border-black" style="width:70%">
+    </div> 
+
+        <div id="productcontainer" class="container grid grid-cols-2 p-4 md:grid-cols-4">
+
+        <div class="rose">
+
+        <img src="./Images/rose.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Rose plant</h1>
+        <h1>$20</h1>
+        </div>
+
+         <div class="hibiscus">
+
+        <img src="./Images/hibiscus.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Hibiscus plant</h1>
+        <h1>$15</h1>
+        </div>
+
+
+         <div class="jasmine">
+
+        <img src="./Images/jasmine.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2"> 
+        <h1>Jasmine plant</h1>
+        <h1>$40</h1>
+         </div>
+
+
+        <div  class="lilly">
+
+        <img src="./Images/lilly.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Lilly plant</h1>
+        <h1>$10</h1>
+         </div>
+        
+
+    
 
     <div class="rose">
 
@@ -68,45 +117,12 @@
         <h1>Lilly plant</h1>
         <h1>$10</h1>
     </div>
-    </div>
-
-    <div class="container grid grid-cols-2 p-4 md:grid-cols-4">
-
-    <div class="rose">
-
-        <img src="./Images/rose.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose plant</h1>
-        <h1>$20</h1>
-    </div>
-
-    <div class="hibiscus">
-
-        <img src="./Images/hibiscus.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Hibiscus plant</h1>
-        <h1>$15</h1>
-    </div>
-
-
-    <div class="jasmine">
-
-        <img src="./Images/jasmine.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2"> 
-        <h1>Jasmine plant</h1>
-        <h1>$40</h1>
-    </div>
-
-
-    <div  class="lilly">
-
-        <img src="./Images/lilly.jpg" class="w-60 h-60 inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Lilly plant</h1>
-        <h1>$10</h1>
-    </div>
 
     </div>
 
 
 
-</div>
+
 
 
 <!--footer-->
@@ -115,7 +131,7 @@
     <h3 class="mb-4">Greenden plants website running succesfully</h3>
     <h3>@2021 Greenday.com</h3>
 </div>
-
+<script src="products.js"></script>
     
 </body>
 

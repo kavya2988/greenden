@@ -17,7 +17,7 @@
         <h1 class="text-xl">Greenden</h1>
         
 
-<i class="fa-solid fa-bars md:hidden"></i>
+<i id="menuicon" class="fa-solid fa-bars md:hidden"></i>
 
 
         <div class="flex gap-6 text-gray-500 hidden md:flex"  > 
@@ -26,6 +26,20 @@
               <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
         </div>
     </nav>
+
+
+    <!--sidenavbar-->
+    <div id="sidenav" class="bg-green-200 fixed top-0 z-20 flex justify-center" style="width: 50%; right:-50%; height: 100vh;">
+            <div class="flex flex-col gap-6 text-gray-500 "  > 
+            <a href=" index.html" class="hover:underline hover:text-black">Home</a>
+             <a href="products.html" class="hover:underline hover:text-black">Products</a>
+              <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
+            </div>
+
+            <div id="close"> 
+            <p class=" absolute top-0 right-0 cursor-pointer p-5 text-right text-2xl">x</p>
+            </div>
+    </div>
 
     <!--contact-->
 <section class="bg-white dark:bg-gray-900">
@@ -58,6 +72,6 @@
     <h3>@2021 Greenday.com</h3>
 </div>
 
-    
+    <script src="contact.js"></script>
 </body>
 </html>
